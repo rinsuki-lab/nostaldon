@@ -97,8 +97,8 @@ $(function() {
             }
         })
     })
-    openTimeline("social.mikutter.hachune.net", "public", false)
-    openTimeline("mstdn.rinsuki.net", "public", true)
+    // openTimeline("social.mikutter.hachune.net", "public", false)
+    // openTimeline("mstdn.rinsuki.net", "public", true)
     $(document).on("click", "a[target=_blank]", function(event) {
         const anchor = this as HTMLAnchorElement
         const url = new URL(anchor.href)
