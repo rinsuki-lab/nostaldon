@@ -12,8 +12,8 @@ function $createPostElement(post: any) {
 function openTimeline(hostname: string, name: string, local: boolean) {
     const $dialog = $('<div>').dialog({
         title: (local ? "LTL" : "FTL") + ": " + hostname,
-        width: 400,
-        height: 400,
+        width: 360,
+        height: 500,
     })
     const xhr = new XMLHttpRequest()
     const url = new URL("https://example.com/")
