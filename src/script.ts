@@ -1,6 +1,6 @@
 function $createPostElement(post: any) {
     const $post = $('<div>').addClass("ui-widget ui-widget-content ui-corner-all ui-mastodon-post")
-    const $user = $('<a>').addClass("ui-mastodon-post-user").attr("href", post.account.url)
+    const $user = $('<a>').addClass("ui-mastodon-post-user").attr("target", "_blank").attr("href", post.account.url)
         .append($('<img>').attr("src", post.account.avatar_static).css("float", "left"))
         .append($('<span>').addClass("ui-mastodon-post-user-name").text(post.account.display_name))
         .append($('<span>').addClass("ui-mastodon-post-user-acct").text(" @" + post.account.acct))
